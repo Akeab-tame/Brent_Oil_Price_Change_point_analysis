@@ -76,7 +76,7 @@ class LSTM_Modelling:
         filename = f'{folder_path}{model_name}-{timestamp}.pkl'
         
         # Save the model using pickle
-        with open(filename) as file:
+        with open(filename, 'wb') as file:
             pickle.dump(model, file)
         
         print(f"Model saved as {filename}")
