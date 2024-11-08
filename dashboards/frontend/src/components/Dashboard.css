@@ -1,0 +1,165 @@
+/* frontend/src/components/Dashboard.css */
+
+/* General Dashboard Styling */
+.dashboard-container {
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+.dashboard-title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.dashboard-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Loading Spinner */
+.loading {
+    font-size: 1.5em;
+    color: #007bff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Tabs Styling */
+#dashboard-tabs .nav-link {
+    color: #007bff;
+    font-weight: 500;
+}
+
+#dashboard-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Event Filter Styling */
+.event-filter {
+    margin-bottom: 20px;
+}
+
+/* Chart Styling */
+.chart-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Model Result Card */
+.model-result-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.model-result-card .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.model-result-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.model-result-card strong {
+    color: #007bff;
+}
+
+/* Statistics Component Styling */
+.statistics-container {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.statistics-container .stat-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.statistics-container p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Data Export Button */
+.data-export-btn {
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.data-export-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Event Impact Component Styling */
+.event-impact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event-impact-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .dashboard-title {
+        font-size: 1.5em;
+    }
+
+    .dashboard-description {
+        font-size: 1em;
+    }
+
+    .chart-container {
+        padding: 10px;
+    }
+
+    .statistics-container,
+    .event-impact-container,
+    .model-result-card {
+        padding: 15px;
+    }
+}
